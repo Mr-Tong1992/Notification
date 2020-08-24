@@ -1,37 +1,3 @@
-# Notification
-单例 对象关联 key   关联数组  数组中存放block      遍历数组中的block完成注册过的回调
-//
-//  TQNotifTool.h
-//  testNotifiction
-//
-//  Created by syswin on 2020/8/24.
-//  Copyright © 2020 syswin. All rights reserved.
-//
-
-#import <Foundation/Foundation.h>
-
-NS_ASSUME_NONNULL_BEGIN
-
-@interface TQNotifTool : NSObject
-
-+(instancetype)share;
-
--(void)registAction:(void(^)(void))block   name:(NSString *)str;
-
--(void)postActionWithName:(NSString *)str;
-
--(void)removeActionWithName:(NSString *)str;
-
-@end
-
-NS_ASSUME_NONNULL_END
-
-
-
-
-
-
-
 //
 //  TQNotifTool.m
 //  testNotifiction
