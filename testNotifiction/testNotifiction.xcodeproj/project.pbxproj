@@ -19,7 +19,6 @@
 		C8277E2B24F358E400643154 /* TQNotifTool.m in Sources */ = {isa = PBXBuildFile; fileRef = C8277E2A24F358E400643154 /* TQNotifTool.m */; };
 		C8277E2E24F35B0000643154 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8277E2D24F35B0000643154 /* SecondViewController.m */; };
 		C8277E3124F35B1A00643154 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8277E3024F35B1A00643154 /* ThirdViewController.m */; };
-		C8277E3424F39B6D00643154 /* NSObject+runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = C8277E3324F39B6D00643154 /* NSObject+runtime.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,8 +63,6 @@
 		C8277E2D24F35B0000643154 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		C8277E2F24F35B1A00643154 /* ThirdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
 		C8277E3024F35B1A00643154 /* ThirdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
-		C8277E3224F39B6D00643154 /* NSObject+runtime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+runtime.h"; sourceTree = "<group>"; };
-		C8277E3324F39B6D00643154 /* NSObject+runtime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+runtime.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,8 +125,6 @@
 				C8277E3024F35B1A00643154 /* ThirdViewController.m */,
 				C8277E2924F358E400643154 /* TQNotifTool.h */,
 				C8277E2A24F358E400643154 /* TQNotifTool.m */,
-				C8277E3224F39B6D00643154 /* NSObject+runtime.h */,
-				C8277E3324F39B6D00643154 /* NSObject+runtime.m */,
 				C8277DFD24F358C400643154 /* Main.storyboard */,
 				C8277E0024F358C500643154 /* Assets.xcassets */,
 				C8277E0224F358C500643154 /* LaunchScreen.storyboard */,
@@ -291,7 +286,6 @@
 				C8277DFC24F358C400643154 /* ViewController.m in Sources */,
 				C8277DF624F358C400643154 /* AppDelegate.m in Sources */,
 				C8277E0724F358C500643154 /* main.m in Sources */,
-				C8277E3424F39B6D00643154 /* NSObject+runtime.m in Sources */,
 				C8277DF924F358C400643154 /* SceneDelegate.m in Sources */,
 				C8277E2B24F358E400643154 /* TQNotifTool.m in Sources */,
 				C8277E3124F35B1A00643154 /* ThirdViewController.m in Sources */,

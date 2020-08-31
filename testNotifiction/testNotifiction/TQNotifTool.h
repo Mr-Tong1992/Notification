@@ -14,11 +14,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 +(instancetype)share;
 
--(void)registAction:(void(^)(void))block   name:(NSString *)str;
+-(void)registAction:(void(^)(void))block   name:(NSString *)str  withObjc:(NSObject *)objc;
 
 -(void)postActionWithName:(NSString *)str;
 
--(void)removeActionWithName:(NSString *)str;
+-(void)removeBlockWithObjc:(NSObject *)objc withName:(NSString *)str;
+
+@property(nonatomic ,strong)NSMutableArray * array;
 
 @end
 

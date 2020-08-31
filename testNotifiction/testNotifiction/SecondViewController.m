@@ -8,18 +8,37 @@
 
 #import "SecondViewController.h"
 #import "TQNotifTool.h"
-@interface SecondViewController ()
 
+@interface SecondViewController ()
+@property(nonatomic ,strong)NSTimer * timer;
+
+@property(nonatomic ,strong)NSString  * text;
 @end
 
 @implementation SecondViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [[TQNotifTool share] removeActionWithName:@"atest"];
-    // Do any additional setup after loading the view.
+    
+    [[TQNotifTool  share]  registAction:^{
+        NSLog(@"fafaf");
+
+    } name:@"atest" withObjc:self];
+    
+    [[TQNotifTool  share]  registAction:^{
+        NSLog(@"fafaf");
+          
+      } name:@"atest" withObjc:self];
+
 }
 
+
+-(void)dealloc{
+    [[TQNotifTool share] removeBlockWithObjc:self withName:@"atest"];
+    [[TQNotifTool  share] postActionWithName:@"atest"];
+
+    NSLog(@"%@dealloc",NSStringFromClass(self.class));
+}
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     [[TQNotifTool  share] postActionWithName:@"atest"];
